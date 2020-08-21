@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_main"
+    tools:context=".Messagge"
+    android:orientation="vertical">
+
+   <RelativeLayout
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       >
+       <EditText
+           android:layout_width="match_parent"
+           android:inputType="phone"
+           android:ems="10"
+           android:id="@+id/etphone"
+           android:hint="Enter contact number"
+           android:layout_height="wrap_content"
+           android:singleLine="true"/>
+
+</RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="610dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etmessage"
+            android:layout_weight="5"
+            android:hint="Enter message"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btnSend"
+            android:layout_weight="1"
+            android:onClick="send"
+            android:background="@drawable/ic_menu"
+            tools:ignore="OnClick" />
+
+    </LinearLayout>
+</RelativeLayout>
